@@ -1,0 +1,25 @@
+{
+  "name": "react-electron-browser-window",
+  "version": "0.1.0",
+  "description": "Electron's BrowserWindow as a react component",
+  "main": "bin/index.js",
+  "repository": "https://www.github.com/illberoy/react-electron-browser-window.git",
+  "author": "Roy Sommer",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf bin/",
+    "compile": "babel src --out-dir bin"
+  },
+  "peerDependencies": {
+    "electron": "*",
+    "react": "*"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "rimraf": "^2.5.4"
+  }
+}
