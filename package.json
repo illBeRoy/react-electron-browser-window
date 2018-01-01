@@ -1,6 +1,6 @@
 {
   "name": "react-electron-browser-window",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Electron's BrowserWindow as a react component",
   "main": "bin/index.js",
   "repository": "https://www.github.com/illberoy/react-electron-browser-window.git",
@@ -22,8 +22,5 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "rimraf": "^2.5.4"
-  },
-  "dependencies": {
-    "prop-types": "^15.6.0"
   }
 }
