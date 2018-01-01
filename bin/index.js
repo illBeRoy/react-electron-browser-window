@@ -10,6 +10,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _electron = require('electron');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -163,24 +167,24 @@ var BrowserWindow = function (_Component) {
 }(_react.Component);
 
 BrowserWindow.propTypes = {
-    title: _react2.default.PropTypes.string,
-    visible: _react2.default.PropTypes.bool,
-    icon: _react2.default.PropTypes.string,
-    width: _react2.default.PropTypes.number,
-    height: _react2.default.PropTypes.number,
-    left: _react2.default.PropTypes.number,
-    top: _react2.default.PropTypes.number,
-    center: _react2.default.PropTypes.bool,
-    animated: _react2.default.PropTypes.bool,
-    movable: _react2.default.PropTypes.bool,
-    resizable: _react2.default.PropTypes.bool,
-    minimizable: _react2.default.PropTypes.bool,
-    maximizable: _react2.default.PropTypes.bool,
-    fullscreenable: _react2.default.PropTypes.bool,
-    closable: _react2.default.PropTypes.bool,
-    alwaysOnTop: _react2.default.PropTypes.bool,
-    skipTaskbar: _react2.default.PropTypes.bool,
-    windowState: _react2.default.PropTypes.oneOf('normal', 'minimized', 'maximized', 'fullscreen', 'kiosk'),
-    macOsVibrancy: _react2.default.PropTypes.oneOf('light', 'dark', 'titlebar', 'selection', 'menu', 'popover', 'sidebar', 'medium-light', 'ultra-dark', 'appearance-based')
+    title: _propTypes2.default.string,
+    visible: _propTypes2.default.bool,
+    icon: _propTypes2.default.string,
+    width: _propTypes2.default.number,
+    height: _propTypes2.default.number,
+    left: _propTypes2.default.number,
+    top: _propTypes2.default.number,
+    center: _propTypes2.default.bool,
+    animated: _propTypes2.default.bool,
+    movable: _propTypes2.default.bool,
+    resizable: _propTypes2.default.bool,
+    minimizable: _propTypes2.default.bool,
+    maximizable: _propTypes2.default.bool,
+    fullscreenable: _propTypes2.default.bool,
+    closable: _propTypes2.default.bool,
+    alwaysOnTop: _propTypes2.default.bool,
+    skipTaskbar: _propTypes2.default.bool,
+    windowState: _propTypes2.default.oneOf('normal', 'minimized', 'maximized', 'fullscreen', 'kiosk'),
+    macOsVibrancy: _propTypes2.default.oneOf('light', 'dark', 'titlebar', 'selection', 'menu', 'popover', 'sidebar', 'medium-light', 'ultra-dark', 'appearance-based')
 };
 exports.default = BrowserWindow;

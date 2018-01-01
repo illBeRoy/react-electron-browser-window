@@ -1,29 +1,30 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {remote} from 'electron';
 
 
 export default class BrowserWindow extends Component {
 
     static propTypes = {
-        title: React.PropTypes.string,
-        visible: React.PropTypes.bool,
-        icon: React.PropTypes.string,
-        width: React.PropTypes.number,
-        height: React.PropTypes.number,
-        left: React.PropTypes.number,
-        top: React.PropTypes.number,
-        center: React.PropTypes.bool,
-        animated: React.PropTypes.bool,
-        movable: React.PropTypes.bool,
-        resizable: React.PropTypes.bool,
-        minimizable: React.PropTypes.bool,
-        maximizable: React.PropTypes.bool,
-        fullscreenable: React.PropTypes.bool,
-        closable: React.PropTypes.bool,
-        alwaysOnTop: React.PropTypes.bool,
-        skipTaskbar: React.PropTypes.bool,
-        windowState: React.PropTypes.oneOf('normal', 'minimized', 'maximized', 'fullscreen', 'kiosk'),
-        macOsVibrancy: React.PropTypes.oneOf('light', 'dark', 'titlebar', 'selection', 'menu', 'popover', 'sidebar', 'medium-light', 'ultra-dark', 'appearance-based')
+        title: PropTypes.string,
+        visible: PropTypes.bool,
+        icon: PropTypes.string,
+        width: PropTypes.number,
+        height: PropTypes.number,
+        left: PropTypes.number,
+        top: PropTypes.number,
+        center: PropTypes.bool,
+        animated: PropTypes.bool,
+        movable: PropTypes.bool,
+        resizable: PropTypes.bool,
+        minimizable: PropTypes.bool,
+        maximizable: PropTypes.bool,
+        fullscreenable: PropTypes.bool,
+        closable: PropTypes.bool,
+        alwaysOnTop: PropTypes.bool,
+        skipTaskbar: PropTypes.bool,
+        windowState: PropTypes.oneOf('normal', 'minimized', 'maximized', 'fullscreen', 'kiosk'),
+        macOsVibrancy: PropTypes.oneOf('light', 'dark', 'titlebar', 'selection', 'menu', 'popover', 'sidebar', 'medium-light', 'ultra-dark', 'appearance-based')
     };
 
     render() {
